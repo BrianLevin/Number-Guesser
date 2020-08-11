@@ -38,3 +38,9 @@ guessBtn.addEventListener('click', function(){
   }
     
 })
+
+// Set message
+function setMessage(msg, color){
+    message.style.color = color;
+    message.textContent = msg;
+  }
