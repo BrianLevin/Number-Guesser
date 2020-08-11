@@ -49,6 +49,11 @@ guessBtn.addEventListener('click', function(){
   } else {
 // Wrong number
 guessesLeft -= 1;
+if(guessesLeft === 0){
+    // Game over - lost
+    gameOver(false, `Game Over, you lost. The correct number was ${winningNum}`);
+  } else {
+    // Game continues - answer wrong
   }
 });
     
