@@ -65,6 +65,20 @@ if(guessesLeft === 0){
   }
   }
 });
+// Game over
+function gameOver(won, msg){
+    let color;
+    won === true ? color = 'green' : color = 'red';
+  
+    // Disable input
+    guessInput.disabled = true;
+    // Change border color
+    guessInput.style.borderColor = color;
+    // Set text color
+    message.style.color = color;
+    // Set message
+    setMessage(msg);
+  }
     
 
 
