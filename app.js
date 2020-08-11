@@ -47,7 +47,8 @@ guessBtn.addEventListener('click', function(){
     setMessage(`${winningNum} is correct, YOU WIN!`, 'green');
 
   } else {
-
+// Wrong number
+guessesLeft -= 1;
   }
 });
     
