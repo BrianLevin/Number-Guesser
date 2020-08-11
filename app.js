@@ -23,9 +23,17 @@ guessInput = document.querySelector('#guess-input'),
 message = document.querySelector('.message');
 
 
+
 // Assign UI min and max
 minNum.textContent = min;
 maxNum.textContent = max;
+
+// Play again event listener
+game.addEventListener('mousedown', function(e){
+    if(e.target.className === 'play-again'){
+      window.location.reload();
+    }
+  });
 
 
 // Listen for guess
